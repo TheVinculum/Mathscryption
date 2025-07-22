@@ -1,0 +1,4 @@
+Directing the Mathematics Category at the annual STEM Competition held at my High School, I wanted to design a final round for the best mathematicians of the competition that not only challenged their mathematical prowess in the traditional sense, but also gauged how well they can strategize and play around with basic maths concepts in a much more convoluted setting.
+Thus, I decided to design a card game, which may look like simple arithmetic at first glance, but is much more complex at a deeper level. 
+This project does not primarily deal with the design of the game (which has already been done for the most part), but with its analysis and optimization i.e. exploring how different game mechanics play out, filling in some missing pieces of the game design and tweaking the game rules until the game seems balanced enough for the target audience. 
+I try to do so using techniques involving data, simulations, mathematics, statistics and programming. 
