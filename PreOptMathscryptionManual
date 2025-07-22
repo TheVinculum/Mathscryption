@@ -1,0 +1,53 @@
+Game consists of two 20-minute phases. Its played between two teams of two members each, but at least one member from each team would also suffice.
+
+During the first 20 minute phase, called 'Solvertaire', one member from each team solves mathematical questions.
+
+Each member can solve a maximum of 25 questions during the time; they choose the difficulties of each of the questions.
+Questions with higher difficulty, if answered correctly, accumulate higher 'Energy' (the games main currency)
+The difficulties are Easy, Medium, Hard [E,M,H].
+Energy gained increases with difficulty, but the specific values of [E,M,H] have to be determined by examining how they are utilized in the second stage.
+
+The second 20 minute phase is the actual card paly part, called 'MathJack', and again, one member from each team faces off against each other.
+This phase is played with a standard 52 card deck and pad of sticky notes.
+
+There are three piles:
+Number (N) Pile: Numbered cards of the 52 card deck (2-10 for each suit)  [36 cards]
+Operations (O) Pile: An inexhaustable pad of sticky notes [Infinite notes, but realistically around 50]
+Special (S) Pile: The reamining cards of the 52 card deck, which we will call the special cards (Ace, King, Queen, Jack for each suit) [16 cards]
+
+The Phase will consist of five turns. Every turn, players will spend energy to draw cards from the 3 piles. 
+A random 'Cap' target will be introduced for both player.
+They must build an expression using their numbered cards and operation notes. 
+
+They can put the following operator symbols on their notes: multiplication, division, addition or subtraction. 
+They can then use these between their Numbered cards. 
+Otherwise, they can use a blank sticky note to concatenate two cards forming a two-digit number (but no more than that). (This doesn't work on the 10 card)
+So an expression with n Numbered Cards will have n-1 Operation cards, with each expression having alternating N and O cards.
+
+The ‘Answer’ to this expression must not exceed the Cap number. 
+A feasile range of values for the Cap is yet to be decided.
+Any answer over the cap is taken as zero. 
+If an answer is not an integer, it will be rounded down to the nearest whole number. 
+The 'Answer' is added to “Aggregate” score of the team (which is initialized at zero).
+PLayers can use a maximum of seven items (max four cards and three notes) to build their expression, so possible expression have one of these combinations:
+(4N,3O),(3N,2O),(2N,1O),(1N)
+
+Special cards have special abilities which can increase your aggregate significantly or give you rule-bending capabilities etc. 
+The players generally use their special cards after the answer, but some abilities may be used during the turn.
+Players can play a maximum of one and a minimum of zero specials per turn.
+The ACE cards are the aggregate-increasing cards triggered if condiitons are met by the expression 
+ACEs need to be carefully balanced thourgh analyzing how often they trigger and how well they score.
+The JACK cards bend rules.
+The KING cards pertain to energy and cost of cards.
+The QUEEN cards are related more closely to expressions and miscallaneous abilities.
+
+
+To sit the limit for cards/notes in hand, it sensible to have 4 Numbered cards and 3 Operation cards so the players can use their full hand while making a seven item expression.
+The special card limit should be set at 2, because only one special cad at a time would severely limit the players creatively, as they would try to build their expression around the one special ability.
+Additionally, with 2 S cards, players can save one for future and work towards getting a hand that utilizes the abiity most efficiently.
+
+A major issue is the cost of drawing the cards. Special cards need to be more costly than the other two to avoid hoarding of special abilities.
+The Numbered and Operation cards can be of the same value but it wouldnt be wrong if Operation cards are costlier.
+The costs [N,O,S] need to be determined by somehow balancing them with energy accumulated druing the first stage.
+
+Whichever player accumulates more aggregrate points across the five turns Wins.
