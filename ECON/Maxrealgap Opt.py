@@ -36,8 +36,8 @@ prob += O >= N
 prob += M == E+1
 prob += H == M+1
 prob += S == O+2
-#prob += realistic_energy >= realistic_spend
-#prob += max_energy >= max_spend
+prob += realistic_energy >= realistic_spend
+prob += max_energy >= max_spend
 
 # Objective: Minimize the absolute difference
 
